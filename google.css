@@ -1,0 +1,191 @@
+body{
+    background-color: rgb(255, 255, 255);
+    max-width: 1280px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+.top{
+    display: flex;
+    font-size: 10px;
+    gap: 15px;
+    position: relative;
+    top: -80px; left: 520px;
+
+}
+.searchicon{
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: -34px;
+    left: 10px;
+
+}
+.icon{
+    width: 18px;
+    height: 18px;
+}
+.searchright{
+    position: absolute;
+    right: 330px;
+    top: 235px;
+}
+.img1{
+    width: 16px;
+    height: 16px;
+}
+.img2{
+    position: relative;
+    top: -12px; left: -10px;
+    width: 16px;
+    height: 16px;
+}
+.mini1:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.mini3:hover{
+    background-color: lightgray;
+    box-shadow: 1px 1px 30px ;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.mini4:hover{
+    background-color: lightgray;
+    box-shadow: 1px 1px 30px ;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.google:hover{
+    cursor: pointer;
+}
+.google{
+   font-family:'GmarketSansMedium';
+   font-size: 55px;
+   display: flex;
+   font-weight: 900;
+}
+.G{
+    color: blue;
+}
+.o1{
+    color: red;
+}
+.o2{
+    color: yellow;
+}
+.l{
+    color: green;
+}
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+input{
+    box-shadow: 1px 1px 3px;
+    border: 0;
+    margin-top: 30px;
+    width: 600px;
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 30px;
+}
+
+.material-symbols-outlined{
+    position: relative;
+    top: -25px; left: 10px;
+}
+.vail{
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.vail:hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+.youtube{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.img3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: lightgray;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.chrome{
+    width:25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.naver{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.plus{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+
+   
+}
+.img4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: lightblue;
+}
+.dropdown .btn.btn-secondary.dropdown-toggle {
+    height: 16px;
+    width: 16px !important;
+    background-color: white !important;
+    border-color: white !important;
+  }
+.dropdown-menu{
+    width: 300px;
+    height: 400px;
+    border-radius: 30px;
+    border: 1;
+    border-width: 5px;
+    border-color: lightblue;
+    background-color: whitesmoke;
+    max-height: 1000px;
+    overflow-y: auto;
+}
+.dropimg{
+
+    width: 50px !important;
+    height: 50px !important;
+}
+.dorpdownimg{
+    display: flex;
+    justify-content: space-around;
+}
+.text{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
