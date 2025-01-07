@@ -28,6 +28,9 @@ body{
     width: 18px;
     height: 18px;
 }
+.icon:hover{
+    cursor: pointer;
+}
 .searchright{
     position: absolute;
     right: 330px;
@@ -55,7 +58,7 @@ body{
 }
 .mini4:hover{
     background-color: lightgray;
-    box-shadow: 1px 1px 30px ;
+    box-shadow: 1px 1px 10px ;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -75,7 +78,7 @@ body{
     color: red;
 }
 .o2{
-    color: yellow;
+    color: rgb(231, 188, 15);
 }
 .l{
     color: green;
@@ -87,13 +90,14 @@ body{
     font-style: normal;
 }
 input{
+    font-size: 13px;
     box-shadow: 1px 1px 3px;
     border: 0;
     margin-top: 30px;
     width: 600px;
     height: 40px;
     border-radius: 20px;
-    padding-left: 30px;
+    padding-left: 40px;
 }
 
 .material-symbols-outlined{
@@ -188,4 +192,35 @@ input{
     text-align: center;
     display: flex;
     justify-content: space-around;
+    
+}
+.box{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box:hover{
+    background-color: lightgray;
+}
+.circle{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    text-align: center;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    background-color: lightblue;
+    border-radius: 40px;
+    font-size: 10px;
+}
+.circle:hover{
+    cursor: pointer;
+    background-color: lightgray;
+}
+.pencil{
+    width: 15px;
+    height: 15px;
 }

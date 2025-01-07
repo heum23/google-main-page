@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Overlay Effect</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        .section {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: transform 1s ease;
+            background-size: cover;
+        }
+        .section:nth-child(1) { background: #ffadad; z-index: 4; }
+        .section:nth-child(2) { background: #ffd6a5; z-index: 3; }
+        .section:nth-child(3) { background: #fdffb6; z-index: 2; }
+        .section:nth-child(4) { background: #caffbf; z-index: 1; }
+    </style>
+</head>
+<body>
+    <div class="section" id="page1">Page 1</div>
+    <div class="section" id="page2">Page 2</div>
+    <div class="section" id="page3">Page 3</div>
+    <div class="section" id="page4">Page 4</div>
+    <script>
+        let currentPage = 0;
+        const sections = document.querySelectorAll('.section');
+        const maxPages = sections.length;
+
+        window.addEventListener('wheel', (event) => {
+            if (event.deltaY > 0 && currentPage < maxPages - 1) {
+                currentPage++;
+            } else if (event.deltaY < 0 && currentPage > 0) {
+                currentPage--;
+            }
+            updatePages();
+        });
+
+        function updatePages() {
+            sections.forEach((section, index) => {
+                section.style.transform = `translateY(${(index - currentPage) * 100}%)`;
+            });
+        }
+    </script>
+</body>
+</html>
