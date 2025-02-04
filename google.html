@@ -1,179 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="google.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="google.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script>
-   const goPage = (type) =>{
-    let url 
-    if(type === 'youtube'){
-        url = 'https://www.youtube.com/'
-    }else if(type === 'chrome'){
-        url = 'https://chromewebstore.google.com/'
-    }else if(type === 'naver'){
-        url = 'https://www.naver.com/'
-    }else if(type === '바로가기' || type === 'beaker'){
-        alert("준비중입니다!")
-        return
-    }else if(type === 'google'){
-        url ='https://www.google.com'
-    }
-    window.open(url , '_blank');
-   }
-</script>
-<body>
+  </head>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    const goPage = (type) => {
+      let url;
+      if (type === "youtube") {
+        url = "https://www.youtube.com/";
+      } else if (type === "chrome") {
+        url = "https://chromewebstore.google.com/";
+      } else if (type === "naver") {
+        url = "https://www.naver.com/";
+      } else if (type === "바로가기" || type === "beaker") {
+        alert("준비중입니다!");
+        return;
+      } else if (type === "google") {
+        url = "https://www.google.com";
+      }
+      window.open(url, "_blank");
+    };
+  </script>
+  <body>
     <div class="container">
-        <div class="top">
-            <div class="mini1">Gmail</div>
-            <div class="mini1">이미지</div>
-            <div class="mini3" onclick="goPage('beaker')"><img class="img1" src="./img/beaker.png" alt="img"/></div>
-            <div class="mini4"><div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img class="img2" src="./img/apps.png" alt="img"/>
-                </button>
-                <div class="dropdown-menu">
-                  <div class="dropdown-item">
-                    <div class="dorpdownimg">
-                    <div class="box"><img onclick="goPage('beaker')" class="dropimg" src="./img/name.png"></div>
-                    <div class="box"><img onclick="goPage('beaker')" class="dropimg" src="./img/name.png"></div>
-                    <div class="box"><img onclick="goPage('beaker')" class="dropimg" src="./img/name.png"></div>
-                    </div>
-                    <div class="text">
-                    <div>계정</div>
-                    <div>검색</div>
-                    <div>지도</div>
+      <div class="top">
+        <div class="mini1">Gmail</div>
+        <div class="mini1">이미지</div>
+        <div class="mini3" onclick="goPage('beaker')">
+          <img class="img1" src="./img/beaker.png" alt="img" />
+        </div>
+        <div class="mini4">
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img class="img2" src="./img/apps.png" alt="img" />
+            </button>
+            <div class="dropdown-menu">
+              <div class="dropdown-item">
+                <div class="dorpdownimg">
+                  <div class="box">
+                    <img
+                      onclick="goPage('beaker')"
+                      class="dropimg"
+                      src="./img/name.png"
+                    />
+                  </div>
+                  <div class="box">
+                    <img
+                      onclick="goPage('beaker')"
+                      class="dropimg"
+                      src="./img/name.png"
+                    />
+                  </div>
+                  <div class="box">
+                    <img
+                      onclick="goPage('beaker')"
+                      class="dropimg"
+                      src="./img/name.png"
+                    />
+                  </div>
                 </div>
+                <div class="text">
+                  <div>계정</div>
+                  <div>검색</div>
+                  <div>지도</div>
                 </div>
-                <div class="dropdown-item">
-                    <div class="dorpdownimg">
-                    <div><img onclick="goPage('beaker')" class="dropimg" src="./img/name.png"></div>
-                    <div><img onclick="goPage('beaker')" class="dropimg" src="./img/name.png"></div>
-                    <div><img onclick="goPage('beaker')" class="dropimg" src="./img/name.png"></div>
-                    </div>
-                    <div class="text">
-                    <div>youtube</div>
-                    <div style="padding-right: 10px;">뉴스</div>
-                    <div style="padding-right: 5px;">Gmail</div>
+              </div>
+              <div class="dropdown-item">
+                <div class="dorpdownimg">
+                  <div>
+                    <img
+                      onclick="goPage('beaker')"
+                      class="dropimg"
+                      src="./img/name.png"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      onclick="goPage('beaker')"
+                      class="dropimg"
+                      src="./img/name.png"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      onclick="goPage('beaker')"
+                      class="dropimg"
+                      src="./img/name.png"
+                    />
+                  </div>
                 </div>
+                <div class="text">
+                  <div>youtube</div>
+                  <div style="padding-right: 10px">뉴스</div>
+                  <div style="padding-right: 5px">Gmail</div>
                 </div>
-                <div class="dropdown-item">
-                    <div class="dorpdownimg">
-                    <div><img onclick="goPage('beaker')" class="dropimg" src="./img/name.png"></div>
-                    <div><img onclick="goPage('beaker')" class="dropimg" src="./img/name.png"></div>
-                    <div><img onclick="goPage('beaker')" class="dropimg" src="./img/name.png"></div>
-                    </div>
-                    <div class="text">
-                    <div>Meet</div>
-                    <div style="padding-left: 10px;">채팅</div>
-                    <div>주소록</div>
+              </div>
+              <div class="dropdown-item">
+                <div class="dorpdownimg">
+                  <div>
+                    <img
+                      onclick="goPage('beaker')"
+                      class="dropimg"
+                      src="./img/name.png"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      onclick="goPage('beaker')"
+                      class="dropimg"
+                      src="./img/name.png"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      onclick="goPage('beaker')"
+                      class="dropimg"
+                      src="./img/name.png"
+                    />
+                  </div>
                 </div>
+                <div class="text">
+                  <div>Meet</div>
+                  <div style="padding-left: 10px">채팅</div>
+                  <div>주소록</div>
                 </div>
-                <div class="dropdown-item">
-                    <div class="dorpdownimg">
-                    <div><img onclick="goPage('beaker')" class="dropimg" src="./img/name.png"></div>
-                    <div><img onclick="goPage('beaker')" class="dropimg" src="./img/name.png"></div>
-                    <div><img onclick="goPage('beaker')" class="dropimg" src="./img/name.png"></div>
-                    </div>
-                    <div class="text">
-                    <div style="margin-left: -20px;">드라이브</div>
-                    <div style="margin-left: -30px;">calender</div>
-                    <div style="margin-left: -22px;">play</div>
+              </div>
+              <div class="dropdown-item">
+                <div class="dorpdownimg">
+                  <div>
+                    <img
+                      onclick="goPage('beaker')"
+                      class="dropimg"
+                      src="./img/name.png"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      onclick="goPage('beaker')"
+                      class="dropimg"
+                      src="./img/name.png"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      onclick="goPage('beaker')"
+                      class="dropimg"
+                      src="./img/name.png"
+                    />
+                  </div>
                 </div>
+                <div class="text">
+                  <div style="margin-left: -20px">드라이브</div>
+                  <div style="margin-left: -30px">calender</div>
+                  <div style="margin-left: -22px">play</div>
                 </div>
-                <div class="dropdown-item">
-                    <div class="dorpdownimg">
-                    <div><img onclick="goPage('beaker')" class="dropimg" src="./img/name.png"></div>
-                    <div><img onclick="goPage('beaker')" class="dropimg" src="./img/name.png"></div>
-                    <div><img onclick="goPage('beaker')" class="dropimg" src="./img/name.png"></div>
-                    </div>
-                    <div class="text">
-                    <div>번역</div>
-                    <div>사진</div>
-                    <div>쇼핑</div>
+              </div>
+              <div class="dropdown-item">
+                <div class="dorpdownimg">
+                  <div>
+                    <img
+                      onclick="goPage('beaker')"
+                      class="dropimg"
+                      src="./img/name.png"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      onclick="goPage('beaker')"
+                      class="dropimg"
+                      src="./img/name.png"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      onclick="goPage('beaker')"
+                      class="dropimg"
+                      src="./img/name.png"
+                    />
+                  </div>
                 </div>
+                <div class="text">
+                  <div>번역</div>
+                  <div>사진</div>
+                  <div>쇼핑</div>
                 </div>
-                <hr>
-                <div class="dropdown-item">
-                    <div class="dorpdownimg">
-                    <div><img onclick="goPage('beaker')" class="dropimg" src="./img/name.png"></div>
-                    <div><img onclick="goPage('beaker')" class="dropimg" src="./img/name.png"></div>
-                    <div><img onclick="goPage('beaker')" class="dropimg" src="./img/name.png"></div>
-                    </div>
-                    <div class="text">
-                    <div>계정</div>
-                    <div>계정</div>
-                    <div>계정</div>
+              </div>
+              <hr />
+              <div class="dropdown-item">
+                <div class="dorpdownimg">
+                  <div>
+                    <img
+                      onclick="goPage('beaker')"
+                      class="dropimg"
+                      src="./img/name.png"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      onclick="goPage('beaker')"
+                      class="dropimg"
+                      src="./img/name.png"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      onclick="goPage('beaker')"
+                      class="dropimg"
+                      src="./img/name.png"
+                    />
+                  </div>
                 </div>
+                <div class="text">
+                  <div>계정</div>
+                  <div>계정</div>
+                  <div>계정</div>
                 </div>
-                <div class="dropdown-item">
-                    <div class="dorpdownimg">
-                    <div><img onclick="goPage('beaker')" class="dropimg" src="./img/name.png"></div>
-                    <div><img onclick="goPage('beaker')" class="dropimg" src="./img/name.png"></div>
-                    <div><img onclick="goPage('beaker')" class="dropimg" src="./img/name.png"></div>
-                    </div>
-                    <div class="text">
-                    <div>계정</div>
-                    <div>계정</div>
-                    <div>계정</div>
+              </div>
+              <div class="dropdown-item">
+                <div class="dorpdownimg">
+                  <div>
+                    <img
+                      onclick="goPage('beaker')"
+                      class="dropimg"
+                      src="./img/name.png"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      onclick="goPage('beaker')"
+                      class="dropimg"
+                      src="./img/name.png"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      onclick="goPage('beaker')"
+                      class="dropimg"
+                      src="./img/name.png"
+                    />
+                  </div>
                 </div>
-                </div><div class="dropdown-item">
-                    <div class="dorpdownimg">
-                    <div><img onclick="goPage('beaker')" class="dropimg" src="./img/name.png"></div>
-                    <div><img onclick="goPage('beaker')" class="dropimg" src="./img/name.png"></div>
-                    <div><img onclick="goPage('beaker')"  class="dropimg" src="./img/name.png"></div>
-                    </div>
-                    <div class="text">
-                    <div>계정</div>
-                    <div>계정</div>
-                    <div>계정</div>
+                <div class="text">
+                  <div>계정</div>
+                  <div>계정</div>
+                  <div>계정</div>
                 </div>
-                </div><div class="dropdown-item">
-                    <div class="dorpdownimg">
-                    <div><img onclick="goPage('beaker')" class="dropimg" src="./img/name.png"></div>
-                    <div><img onclick="goPage('beaker')" class="dropimg" src="./img/name.png"></div>
-                    <div><img onclick="goPage('beaker')" class="dropimg" src="./img/name.png"></div>
-                    </div>
-                    <div class="text">
-                    <div>계정</div>
-                    <div>계정</div>
-                    <div>계정</div>
+              </div>
+              <div class="dropdown-item">
+                <div class="dorpdownimg">
+                  <div>
+                    <img
+                      onclick="goPage('beaker')"
+                      class="dropimg"
+                      src="./img/name.png"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      onclick="goPage('beaker')"
+                      class="dropimg"
+                      src="./img/name.png"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      onclick="goPage('beaker')"
+                      class="dropimg"
+                      src="./img/name.png"
+                    />
+                  </div>
                 </div>
+                <div class="text">
+                  <div>계정</div>
+                  <div>계정</div>
+                  <div>계정</div>
                 </div>
+              </div>
+              <div class="dropdown-item">
+                <div class="dorpdownimg">
+                  <div>
+                    <img
+                      onclick="goPage('beaker')"
+                      class="dropimg"
+                      src="./img/name.png"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      onclick="goPage('beaker')"
+                      class="dropimg"
+                      src="./img/name.png"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      onclick="goPage('beaker')"
+                      class="dropimg"
+                      src="./img/name.png"
+                    />
+                  </div>
+                </div>
+                <div class="text">
+                  <div>계정</div>
+                  <div>계정</div>
+                  <div>계정</div>
+                </div>
+              </div>
             </div>
-              </div></div>
+          </div>
         </div>
-        <div class="google" onclick="goPage('google')">
-            <div class="G">G</div>
-            <div class="o1">o</div>
-            <div class="o2">o</div>
-            <div class="G">g</div>
-            <div class="l">l</div>
-            <div class="o1">e</div>
-        </div>
-        <div class="search">
-            <div class="search">
-            <input type="text" name="search" placeholder="Google 검색 또는 URL 입력">
-            <div><img class="searchicon" src="./img/search.png"/></div>
-            <div class="searchright"><img class="icon" src="./img/mic.png"/>
-            <img class="icon" src="./img/camera.png"/></div>
-        </div>
-    </div> 
-                <div class="img">
-                   <div class="vail" onclick="goPage('youtube')"><div class="img3"><img class="youtube" src="./img/youtube.png"></div>youtube</div> 
-                   <div class="vail" onclick="goPage('chrome')"><div class="img3"><img class="chrome" src="./img/chrome2.png"></div>웹 스토어</div> 
-                   <div class="vail" onclick="goPage('naver')"><div class="img3"><img class="naver" src="./img/naver.png"></div>naver</div> 
-                   <div class="vail" onclick="goPage('바로가기')"><div class="img4"><img class="plus" src="./img/plus.png"></div>바로가기 추가</div> 
-                </div>
-        <div class="setting">
-            <div onclick="goPage('바로가기')" class="circle"><img class="pencil" src="./img/pencil.png" alt="pencil"/> chrome 맞춤설정</div>
-        </div>
-    </div>
-</body>
+      </div>
+      <div class="google" onclick="goPage('google')">
+        <div class="G">G</div>
+        <div class="o1">o</div>
+        <div class="o2">o</div>
+        <div class="G">g</div>
+        <div class="l">l</div>
+        <div class="o1">e</div>
+      </div>
 
+      <div class="search">
+        <input
+          type="text"
+          name="search"
+          placeholder="Google 검색 또는 URL 입력"
+        />
+        <div><img class="searchicon" src="./img/search.png" /></div>
+        <div class="searchright">
+          <img class="icon" src="./img/mic.png" />
+          <img class="icon" src="./img/camera.png" />
+        </div>
+      </div>
+
+      <div class="img">
+        <div class="vail" onclick="goPage('youtube')">
+          <div class="img3">
+            <img class="youtube" src="./img/youtube.png" />
+          </div>
+          youtube
+        </div>
+        <div class="vail" onclick="goPage('chrome')">
+          <div class="img3"><img class="chrome" src="./img/chrome2.png" /></div>
+          웹 스토어
+        </div>
+        <div class="vail" onclick="goPage('naver')">
+          <div class="img3"><img class="naver" src="./img/naver.png" /></div>
+          naver
+        </div>
+        <div class="vail" onclick="goPage('바로가기')">
+          <div class="img4"><img class="plus" src="./img/plus.png" /></div>
+          바로가기 추가
+        </div>
+      </div>
+      <div class="setting">
+        <div onclick="goPage('바로가기')" class="circle">
+          <img class="pencil" src="./img/pencil.png" alt="pencil" /> chrome
+          맞춤설정
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
