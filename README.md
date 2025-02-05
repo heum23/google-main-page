@@ -1,7 +1,5 @@
 # Google_main
 
-<div align=center>2024.01.03 ~ 2024.01.07</div>
-
 <br>
 
 <br>
